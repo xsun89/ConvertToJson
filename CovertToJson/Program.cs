@@ -23,7 +23,7 @@ namespace CovertToJson
             {
                 Workbook workbook = new Workbook();
 
-                workbook.LoadFromFile(@"C:\temp\CFRI_Clinical_DB_Approved_Studies_v3.xlsx");
+                workbook.LoadFromFile(@"C:\temp\CFRI_Clinical_DB_Approved_Studies_v17.xlsx");
                 //Initailize worksheet
                 Worksheet sheet = workbook.Worksheets[0];
 
@@ -42,7 +42,7 @@ namespace CovertToJson
         }
         public static void DataTableToJsonObj(DataTable dt)
         {
-            using (StreamWriter outputFile = new StreamWriter(@"C:\temp\jsonFinal_v2.txt", false))
+            using (StreamWriter outputFile = new StreamWriter(@"C:\temp\jsonFinal_v11.txt", false))
             {
 
 
@@ -67,6 +67,7 @@ namespace CovertToJson
                                 || ds.Tables[0].Columns[j].ColumnName.ToString() == "Consent Forms"
                                 || ds.Tables[0].Columns[j].ColumnName.ToString() == "Assent Forms"
                                 || ds.Tables[0].Columns[j].ColumnName.ToString() == "COI"
+                                || ds.Tables[0].Columns[j].ColumnName.ToString() == "Is study currently recruiting"
                                 )
                             {
                                 var xmlData = ds.Tables[0].Rows[i][j].ToString();
