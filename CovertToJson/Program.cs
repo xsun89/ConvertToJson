@@ -23,7 +23,7 @@ namespace CovertToJson
             {
                 Workbook workbook = new Workbook();
 
-                workbook.LoadFromFile(@"C:\temp\CFRI_Clinical_DB_Approved_Studies_v17.xlsx");
+                workbook.LoadFromFile(@"C:\temp\CFRI_Clinical_DB_Approved_Studies_v18.xlsx");
                 //Initailize worksheet
                 Worksheet sheet = workbook.Worksheets[0];
 
@@ -31,7 +31,7 @@ namespace CovertToJson
 
                 DataTableToJsonObj(dataTable);
 
-
+                Console.WriteLine("end processing");
                 Console.ReadKey();
             }
             catch (Exception e)
@@ -42,7 +42,7 @@ namespace CovertToJson
         }
         public static void DataTableToJsonObj(DataTable dt)
         {
-            using (StreamWriter outputFile = new StreamWriter(@"C:\temp\jsonFinal_v11.txt", false))
+            using (StreamWriter outputFile = new StreamWriter(@"C:\temp\jsonFinal_v12.txt", false))
             {
 
 
