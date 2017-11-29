@@ -34,11 +34,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>V:\work\projects\CFRI_Clincal DB\CovertToJson\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Spire.XLS">
-      <HintPath>C:\Program Files (x86)\e-iceblue\Spire.XLS-FE\Bin\NET4.0 ClientProfile\Spire.XLS.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\e-iceblue\Spire.XLS-FE\Bin\NET4.0 ClientProfile\Spire.XLS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
